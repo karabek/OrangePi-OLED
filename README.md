@@ -1,13 +1,13 @@
-# SH1106 / SSD1306 OLED Driver (only tested with SH1106).
+# SH1106 / SSD1306 OLED Driver.
 
-Regenerated repo from Shrottrattes fork "of the original", who made some minor changes, to make it work with a BPi-M1 on Armbian Jessie Vanilla.
+Based on Richard Hulls original repo (https://github.com/rm-hull) adapted to Orange Pi single board computers.
 
 Interfacing OLED matrix displays with the SH1106 (or SSD1306) driver in Python using
-I2C on the Banana Pi. 
+I2C on Orange Pi SBCs. 
 
 ## Pre-requisites
 
-This was tested with Armbian-Jessie on a BP1-M1, with Mainline Kernel .
+This was tested with Armbian on an Orange Pi Zero, with Mainline Kernel .
 
 Install some packages(most should be already installed):
 
@@ -15,7 +15,7 @@ Install some packages(most should be already installed):
 
 Next check that the device is communicating properly:
 
-    $ i2cdetect -y 1
+    $ i2cdetect -y 0
          0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
     00:          -- -- -- -- -- -- -- -- -- -- -- -- --
     10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
